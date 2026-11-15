@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146.0 64.0" width="146" height="64" role="img" aria-labelledby="t">
+  <title id="t">C4 Re:Configure (monogramme)</title>
+  <g transform="translate(0 0) scale(1.0)" fill="none" stroke="#010205" stroke-width="9" stroke-miterlimit="2">
+      <path d="M47.62 17.22 A23 23 0 1 0 47.62 46.78"/>
+      <path d="M104 6 V58"/>
+      <path d="M104 8 L68 44 H118" stroke-linejoin="miter"/>
+    </g>
+    <g transform="translate(0 0) scale(1.0)" fill="#b3121f">
+      <circle cx="139" cy="22" r="5.5"/><circle cx="139" cy="42" r="5.5"/>
+    </g>
+</svg>

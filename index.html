@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C4 Re:Configure | Citroën C4 première génération</title>
+  <meta name="description"
+    content="C4 Re:Configure : projet indépendant et non officiel consacré à la Citroën C4 première génération (2004 à 2010).">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#010205">
+  <link rel="icon" href="assets/logo/logo-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!--
+  MÉDIAS introuvable  :
+  videos/hero.mp4              Vidéo d'ouverture, 16:9, 1920 x 1080, sans son utile (lecture muette), idéalement moins de 10 Mo
+  videos/hero.webm             Optionnel, même vidéo en WebM
+  images/hero.jpg              Image affichée avant la lecture de la vidéo, 16:9, 1920 x 1080
+  images/c4-coupe-phase1.jpg   5:4, 1000 x 800 minimum
+  images/c4-berline-phase1.jpg 5:4, 1000 x 800 minimum
+  images/c4-coupe-phase2.jpg   5:4, 1000 x 800 minimum
+  images/c4-berline-phase2.jpg 5:4, 1000 x 800 minimum
+  images/configurateur.jpg     16:9, 1280 x 720 minimum
+  images/guides.jpg            16:9, 1280 x 720 minimum
+  images/catalogue.jpg         16:9, 1280 x 720 minimum
+  Tant qu'un fichier est absent, un cadre indique le nom attendu.
+  -->
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header is-top" id="haut">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="C4 Re:Configure, accueil">
+        <img class="brand-logo brand-logo-light" src="assets/logo/logo-white.svg" alt="" width="323" height="46">
+        <img class="brand-logo brand-logo-dark" src="assets/logo/logo.svg" alt="" width="323" height="46">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="menu-toggle-label">Menu</span>
+        <span class="menu-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#modeles">Modèles</a></li>
+          <li><a href="pages/configurateur.html">Configurateur</a></li>
+          <li><a href="pages/options.html">Options et packs</a></li>
+          <li><a href="pages/guides.html">Guides</a></li>
+          <li><a href="pages/catalogue.html">Catalogue</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- VIDÉO D'OUVERTURE -->
+    <section class="hero" aria-labelledby="titre-hero">
+      <div class="media hero-media" data-label="Vidéo introuvable : videos/hero.mp4 (16:9, 1920 x 1080)">
+        <video id="hero-video" autoplay muted loop playsinline preload="metadata" poster="images/hero.jpg"
+          aria-hidden="true" tabindex="-1">
+          <source src="videos/hero.webm" type="video/webm">
+          <source src="videos/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Citroën C4 I, 2004 à 2010</p>
+        <h1 id="titre-hero">C4 Re:Configure</h1>
+        <p class="hero-lead">Explore. Customise. Redécouvre.</p>
+        <p class="hero-links">
+          <a class="link-arrow link-light" href="pages/configurateur.html">Ouvrir le configurateur</a>
+          <a class="link-arrow link-light" href="pages/guides.html">Guides d'installation</a>
+        </p>
+      </div>
+
+      <button class="video-control" id="video-control" type="button" aria-pressed="false">
+        <span class="video-control-icon" aria-hidden="true"></span>
+        <span class="video-control-label">Mettre la vidéo en pause</span>
+      </button>
+    </section>
+
+    <!-- MODÈLES -->
+    <section class="section" id="modeles" aria-labelledby="titre-modeles">
+      <div class="container">
+        <h2 id="titre-modeles">Choisissez votre C4</h2>
+        <p class="section-lead">Deux phases, deux carrosseries.</p>
+
+        <div class="card-grid">
+          <a class="card" href="pages/configurateur.html?phase=1&amp;carrosserie=coupe">
+            <figure class="media card-media" data-label="Image introuvable : images/c4-coupe-phase1.jpg (5:4)">
+              <img src="images/c4-coupe-phase1.jpg" alt="" width="1000" height="800" loading="lazy">
+            </figure>
+            <span class="tag">Phase I · dès 2004</span>
+            <span class="card-title">C4 Coupé</span>
+            <span class="card-text">3 portes</span>
+            <span class="link-text">Configurer</span>
+          </a>
+
+          <a class="card" href="pages/configurateur.html?phase=1&amp;carrosserie=berline">
+            <figure class="media card-media" data-label="Image introuvable : images/c4-berline-phase1.jpg (5:4)">
+              <img src="images/c4-berline-phase1.jpg" alt="" width="1000" height="800" loading="lazy">
+            </figure>
+            <span class="tag">Phase I · dès 2004</span>
+            <span class="card-title">C4 Berline</span>
+            <span class="card-text">5 portes</span>
+            <span class="link-text">Configurer</span>
+          </a>
+
+          <a class="card" href="pages/configurateur.html?phase=2&amp;carrosserie=coupe">
+            <figure class="media card-media" data-label="Image introuvable : images/c4-coupe-phase2.jpg (5:4)">
+              <img src="images/c4-coupe-phase2.jpg" alt="" width="1000" height="800" loading="lazy">
+            </figure>
+            <span class="tag">Phase II · dès 2008</span>
+            <span class="card-title">C4 Coupé</span>
+            <span class="card-text">3 portes</span>
+            <span class="link-text">Configurer</span>
+          </a>
+
+          <a class="card" href="pages/configurateur.html?phase=2&amp;carrosserie=berline">
+            <figure class="media card-media" data-label="Image introuvable : images/c4-berline-phase2.jpg (5:4)">
+              <img src="images/c4-berline-phase2.jpg" alt="" width="1000" height="800" loading="lazy">
+            </figure>
+            <span class="tag">Phase II · dès 2008</span>
+            <span class="card-title">C4 Berline</span>
+            <span class="card-text">5 portes</span>
+            <span class="link-text">Configurer</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DÉCOUVRIR -->
+    <section class="section section-grey" aria-labelledby="titre-decouvrir">
+      <div class="container">
+        <h2 id="titre-decouvrir">Découvrir</h2>
+
+        <div class="tile-grid">
+          <a class="tile" href="pages/options.html">
+            <figure class="media tile-media" data-label="Image introuvable : images/configurateur.jpg (16:9)">
+              <img src="images/configurateur.jpg" alt="" width="1280" height="720" loading="lazy">
+            </figure>
+            <span class="card-title">Options et packs</span>
+            <span class="card-text">Ce qui était proposé, finition par finition.</span>
+            <span class="link-text">Explorer</span>
+          </a>
+
+          <a class="tile" href="pages/guides.html">
+            <figure class="media tile-media" data-label="Image introuvable : images/guides.jpg (16:9)">
+              <img src="images/guides.jpg" alt="" width="1280" height="720" loading="lazy">
+            </figure>
+            <span class="card-title">Guides d'installation</span>
+            <span class="card-text">Installer une option sur sa C4, pas à pas.</span>
+            <span class="link-text">Consulter</span>
+          </a>
+
+          <a class="tile" href="pages/catalogue.html">
+            <figure class="media tile-media" data-label="Image introuvable : images/catalogue.jpg (16:9)">
+              <img src="images/catalogue.jpg" alt="" width="1280" height="720" loading="lazy">
+            </figure>
+            <span class="card-title">Catalogue</span>
+            <span class="card-text">Versions, finitions et motorisations.</span>
+            <span class="link-text">Parcourir</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-columns">
+        <section class="footer-col">
+          <h2 class="footer-title"><button class="footer-toggle" type="button"
+              aria-controls="f-modeles"><span>Modèles</span><i aria-hidden="true"></i></button></h2>
+          <ul class="footer-list" id="f-modeles">
+            <li><a href="pages/configurateur.html?phase=1&amp;carrosserie=coupe">C4 Coupé, Phase I</a></li>
+            <li><a href="pages/configurateur.html?phase=1&amp;carrosserie=berline">C4 Berline, Phase I</a></li>
+            <li><a href="pages/configurateur.html?phase=2&amp;carrosserie=coupe">C4 Coupé, Phase II</a></li>
+            <li><a href="pages/configurateur.html?phase=2&amp;carrosserie=berline">C4 Berline, Phase II</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-col">
+          <h2 class="footer-title"><button class="footer-toggle" type="button"
+              aria-controls="f-explorer"><span>Explorer</span><i aria-hidden="true"></i></button></h2>
+          <ul class="footer-list" id="f-explorer">
+            <li><a href="pages/configurateur.html">Configurateur</a></li>
+            <li><a href="pages/options.html">Options et packs</a></li>
+            <li><a href="pages/guides.html">Guides d'installation</a></li>
+            <li><a href="pages/catalogue.html">Catalogue</a></li>
+          </ul>
+        </section>
+
+        <section class="footer-col">
+          <h2 class="footer-title"><button class="footer-toggle" type="button" aria-controls="f-projet"><span>Le
+                projet</span><i aria-hidden="true"></i></button></h2>
+          <ul class="footer-list" id="f-projet">
+            <li><a href="pages/a-propos.html">À propos</a></li>
+            <li><a href="pages/a-propos.html#non-affiliation">Projet indépendant et non officiel</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <a class="footer-logo" href="index.html" aria-label="C4 Re:Configure, accueil">
+          <img src="assets/logo/logo-white.svg" alt="" width="323" height="46">
+        </a>
+        <ul class="footer-legal">
+          <li><a href="pages/mentions-legales.html">Mentions légales</a></li>
+          <li><a href="pages/confidentialite.html">Confidentialité</a></li>
+          <li><a href="#haut">Haut de page</a></li>
+        </ul>
+        <p class="footer-copy">© 2026 C4 Re:Configure</p>
+      </div>
+
+      <p class="footer-small">C4 Re:Configure est un projet indépendant, développé à titre personnel à des fins
+        informatives et éducatives. Il n'est ni édité, ni approuvé, ni sponsorisé par Citroën ou Stellantis. Citroën et
+        C4 sont des marques de leurs propriétaires respectifs, citées uniquement pour identifier le véhicule étudié.</p>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
