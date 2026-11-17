@@ -62,8 +62,6 @@ Tant qu'un fichier est absent, la page affiche un cadre avec le nom attendu.
 | `images/c4-coupe-phase1.jpg`, `c4-berline-phase1.jpg`, `c4-coupe-phase2.jpg`, `c4-berline-phase2.jpg` | 5:4, 1000 x 800 minimum |
 | `images/configurateur.jpg`, `guides.jpg`, `catalogue.jpg` | 16:9, 1280 x 720 minimum |
 
-Vérifier les droits de chaque image et de chaque vidéo avant publication.
-
 ## Lancer le site en local
 
 Ouvrir `index.html` dans un navigateur, ou démarrer un petit serveur depuis la racine du projet :
