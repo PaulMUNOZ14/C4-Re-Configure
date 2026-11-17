@@ -1,0 +1,247 @@
+/* ==========================================================================
+   Pages éditoriales : À propos, Mentions légales, Confidentialité
+   À charger après css/style.css (réutilise ses variables et composants).
+   ========================================================================== */
+
+/* ---------- Entête de page ---------- */
+
+.doc-hero {
+    position: relative;
+    background: var(--black);
+    color: var(--white);
+    overflow: hidden;
+}
+
+.doc-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(120% 120% at 88% 0%, rgba(179, 18, 31, 0.3), transparent 56%),
+        #0b0d12;
+}
+
+.doc-hero-content {
+    position: relative;
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: calc(var(--header-h) + 56px) var(--pad) clamp(40px, 7vw, 72px);
+}
+
+.doc-hero h1 {
+    font-size: clamp(2.2rem, 6vw, 4.2rem);
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin: 10px 0 16px;
+}
+
+.doc-hero-lead {
+    max-width: 60ch;
+    font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+    font-weight: 300;
+    letter-spacing: 0.01em;
+}
+
+.main-nav a[aria-current="page"] {
+    border-bottom-color: currentColor;
+}
+
+/* ---------- Corps du document ---------- */
+
+.doc {
+    padding: clamp(40px, 7vw, 88px) 0 clamp(56px, 9vw, 112px);
+}
+
+.doc-layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: clamp(32px, 6vw, 88px);
+    align-items: start;
+}
+
+.doc-toc {
+    position: sticky;
+    top: calc(var(--header-h) + 24px);
+}
+
+.doc-toc-title {
+    margin: 0 0 14px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.doc-toc ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-left: 1px solid var(--line);
+}
+
+.doc-toc a {
+    display: block;
+    padding: 7px 0 7px 16px;
+    margin-left: -1px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--muted);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+}
+
+.doc-toc a:hover {
+    color: var(--black);
+    border-left-color: var(--black);
+}
+
+.prose {
+    min-width: 0;
+    max-width: 72ch;
+}
+
+.prose section {
+    scroll-margin-top: calc(var(--header-h) + 16px);
+}
+
+.prose section+section {
+    margin-top: clamp(36px, 5vw, 56px);
+    padding-top: clamp(36px, 5vw, 56px);
+    border-top: 1px solid var(--line);
+}
+
+.prose h2 {
+    font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+    margin: 0 0 18px;
+}
+
+.prose h3 {
+    margin: 28px 0 8px;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.prose p {
+    margin: 0 0 16px;
+}
+
+.prose p:last-child {
+    margin-bottom: 0;
+}
+
+.prose ul {
+    margin: 0 0 16px;
+    padding: 0;
+    list-style: none;
+}
+
+.prose ul li {
+    position: relative;
+    padding: 0 0 8px 22px;
+}
+
+.prose ul li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 0.7em;
+    width: 8px;
+    height: 2px;
+    background: var(--black);
+}
+
+.prose a {
+    font-weight: 600;
+    text-underline-offset: 3px;
+}
+
+.prose a:hover {
+    color: var(--accent);
+}
+
+.prose dl {
+    margin: 0 0 16px;
+    display: grid;
+    grid-template-columns: minmax(120px, 190px) minmax(0, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--line);
+}
+
+.prose dt,
+.prose dd {
+    margin: 0;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.prose dt {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-right: 16px;
+}
+
+.callout {
+    margin: 0 0 16px;
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    background: var(--grey);
+    border-left: 3px solid var(--accent);
+}
+
+.doc-updated {
+    margin-top: clamp(36px, 5vw, 56px);
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+/* ---------- Adaptation ---------- */
+
+@media (max-width: 900px) {
+    .doc-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+    }
+
+    .doc-toc {
+        position: static;
+    }
+
+    .doc-toc ol {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 20px;
+        border-left: 0;
+    }
+
+    .doc-toc a {
+        padding: 6px 0;
+        margin: 0;
+        border-left: 0;
+        border-bottom: 2px solid transparent;
+    }
+
+    .doc-toc a:hover {
+        border-bottom-color: var(--black);
+    }
+}
+
+@media (max-width: 560px) {
+    .prose dl {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .prose dt {
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+
+    .prose dd {
+        padding-top: 4px;
+    }
+}
