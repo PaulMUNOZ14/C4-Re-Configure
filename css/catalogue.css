@@ -1,0 +1,352 @@
+/* ==========================================================================
+   Page « Catalogue »
+   À charger après css/style.css et css/legal.css (entête .doc-hero).
+   ========================================================================== */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.main-nav a[aria-current="page"] {
+    border-bottom-color: currentColor;
+}
+
+.cat-section {
+    padding: clamp(56px, 9vw, 104px) 0;
+    scroll-margin-top: var(--header-h);
+}
+
+.cat-section--grey {
+    background: var(--grey);
+}
+
+.cat-head {
+    margin-bottom: clamp(28px, 4vw, 48px);
+}
+
+.cat-head .section-lead {
+    margin-bottom: 0;
+}
+
+/* ---------- Chiffres ---------- */
+
+.cat-figures {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    border-top: 1px solid var(--black);
+    padding-top: 24px;
+}
+
+.cat-figures strong {
+    display: block;
+    font-size: clamp(2.2rem, 5vw, 3.6rem);
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+.cat-figures span {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+/* ---------- Versions (phase x carrosserie) ---------- */
+
+.version-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(16px, 2.4vw, 32px);
+}
+
+.version {
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    text-decoration: none;
+    color: inherit;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    transition: border-color 0.2s;
+}
+
+.version:hover {
+    border-color: var(--black);
+}
+
+.version-media {
+    aspect-ratio: 5 / 4;
+    margin: -28px -28px 24px;
+    border-radius: 9px 9px 0 0;
+}
+
+.version .tag {
+    margin-bottom: 10px;
+}
+
+.version h3 {
+    margin: 0 0 4px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.version h3 span {
+    font-weight: 300;
+    color: var(--muted);
+}
+
+.version-text {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.version-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0 0;
+}
+
+.version-stats li {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+}
+
+.version .link-text {
+    margin-top: 22px;
+}
+
+.version:hover .link-text {
+    border-bottom-color: currentColor;
+}
+
+/* ---------- Finitions ---------- */
+
+.cat-body+.cat-body {
+    margin-top: clamp(48px, 7vw, 80px);
+}
+
+.cat-body-title {
+    margin: 0 0 8px;
+    padding-bottom: 20px;
+    font-size: clamp(1.4rem, 2.6vw, 2rem);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    border-bottom: 1px solid var(--black);
+}
+
+.cat-body-title span {
+    font-weight: 300;
+    color: var(--muted);
+    margin-left: 0.35em;
+}
+
+.cat-pole {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 16px 32px;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.cat-pole h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.cat-pole h4 small {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.cat-grades {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 12px;
+}
+
+.cat-grade {
+    display: block;
+    height: 100%;
+    padding: 16px 18px;
+    text-decoration: none;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    transition: border-color 0.2s;
+}
+
+.cat-grade:hover {
+    border-color: var(--black);
+}
+
+.cat-grade:hover .cat-grade-name {
+    color: var(--accent);
+}
+
+.cat-grade-name {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.25;
+    transition: color 0.2s;
+}
+
+.cat-grade-meta {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+/* ---------- Motorisations ---------- */
+
+.eng-wrap {
+    overflow-x: auto;
+    border-top: 1px solid var(--black);
+    -webkit-overflow-scrolling: touch;
+}
+
+.eng-table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+}
+
+.eng-table th,
+.eng-table td {
+    padding: 13px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+}
+
+.eng-table thead th {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--white);
+}
+
+.eng-table tbody th[scope="row"] {
+    font-weight: 600;
+}
+
+.eng-table .eng-group th {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--grey);
+}
+
+.eng-table td.num {
+    white-space: nowrap;
+}
+
+.eng-bodies {
+    display: flex;
+    gap: 6px;
+}
+
+.eng-bodies span {
+    padding: 3px 10px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+}
+
+.eng-bodies .off {
+    color: #b3b8bf;
+    text-decoration: line-through;
+}
+
+.gearbox-key {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px 32px;
+    max-width: 860px;
+    margin-top: 28px;
+    font-size: 0.9rem;
+}
+
+.gearbox-key dt {
+    font-weight: 700;
+}
+
+.gearbox-key dd {
+    margin: 2px 0 0;
+    color: var(--muted);
+}
+
+.cat-note {
+    max-width: 70ch;
+    margin-top: 28px;
+    padding: 16px 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    background: var(--grey);
+    border-left: 3px solid var(--accent);
+}
+
+.cat-section--grey .cat-note {
+    background: var(--white);
+}
+
+.cat-source {
+    max-width: 70ch;
+    margin-top: 24px;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+/* ---------- Adaptation ---------- */
+
+@media (max-width: 900px) {
+    .cat-figures {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cat-pole {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .version-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .version {
+        padding: 22px;
+    }
+
+    .version-media {
+        margin: -22px -22px 20px;
+    }
+}
