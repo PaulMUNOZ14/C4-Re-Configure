@@ -105,18 +105,11 @@ a {
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
-/* Au tout début de la page (JavaScript actif) : fond transparent, texte blanc sur la vidéo */
-html:not(.no-js) .site-header.is-top {
+/* Au tout début de la page (JavaScript actif, menu fermé) : fond transparent */
+html:not(.no-js) .site-header.is-top:not(.menu-open) {
   background: transparent;
   color: var(--white);
   border-bottom-color: rgba(255, 255, 255, 0.25);
-}
-
-/* Menu mobile ouvert : on repasse en fond plein pour la lisibilité */
-html:not(.no-js) .site-header.is-top.menu-open {
-  background: var(--white);
-  color: var(--ink);
-  border-bottom-color: var(--line);
 }
 
 .header-inner {
@@ -146,7 +139,6 @@ html:not(.no-js) .site-header.is-top.menu-open {
   display: none;
 }
 
-/* Transparent au-dessus de la vidéo : logo blanc ; sinon logo foncé */
 html:not(.no-js) .site-header.is-top:not(.menu-open) .brand-logo-light {
   display: block;
 }
