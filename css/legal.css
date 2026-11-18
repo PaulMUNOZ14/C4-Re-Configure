@@ -186,6 +186,13 @@
     padding-right: 16px;
 }
 
+.prose code {
+    padding: 1px 6px;
+    font-size: 0.85em;
+    background: var(--grey);
+    border-radius: 4px;
+}
+
 .callout {
     margin: 0 0 16px;
     padding: 14px 18px;
