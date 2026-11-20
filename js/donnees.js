@@ -2,15 +2,15 @@
    Généré à partir de options.html : descriptions complètes, finitions, équipements inclus. Prix = estimations. */
 window.C4_ENGINES = {
     "e14": {
-        "name": "BVM5 1.4i 16V 90",
+        "name": "BVM5 90 1.4i 16V",
         "fuel": "Essence",
         "hp": 90,
         "speed": "182",
-        "conso": "6,5",
+        "conso": "6,4",
         "supp": 0
     },
     "d92": {
-        "name": "BVM5 1.6 HDi 92",
+        "name": "BVM5 HDi 92",
         "fuel": "Turbo Diesel",
         "hp": 92,
         "speed": "180",
@@ -18,7 +18,7 @@ window.C4_ENGINES = {
         "supp": 1700
     },
     "e16": {
-        "name": "BVM5 1.6i 16V 110",
+        "name": "BVM5 110 1.6i 16V",
         "fuel": "Essence",
         "hp": 110,
         "speed": "194",
@@ -26,31 +26,31 @@ window.C4_ENGINES = {
         "supp": 1000
     },
     "d110": {
-        "name": "BVM5 1.6 HDi 110",
+        "name": "BVM5 HDi 110",
         "fuel": "Turbo Diesel",
         "hp": 110,
         "speed": "192",
-        "conso": "4,5 à 4,8",
+        "conso": "4,8",
         "supp": 2600
     },
     "d110f": {
-        "name": "BVM5 1.6 HDi 110 FAP",
+        "name": "BVM5 HDi 110 FAP",
         "fuel": "Turbo Diesel",
         "hp": 110,
         "speed": "192",
-        "conso": "4,5 à 4,8",
+        "conso": "4,7",
         "supp": 3000
     },
     "d110p": {
-        "name": "BMP6 1.6 HDi 110 FAP",
+        "name": "BMP6 HDi 110 FAP",
         "fuel": "Turbo Diesel",
         "hp": 110,
         "speed": "192",
-        "conso": "4,5 à 4,8",
+        "conso": "4,5",
         "supp": 3500
     },
     "e16a": {
-        "name": "BVA4 1.6i 16V 110",
+        "name": "BVA4 110 1.6i 16V",
         "fuel": "Essence",
         "hp": 110,
         "speed": "188",
@@ -58,39 +58,39 @@ window.C4_ENGINES = {
         "supp": 2300
     },
     "e20": {
-        "name": "BVM5 2.0i 16V 140",
+        "name": "BVM5 143 2.0i 16V",
         "fuel": "Essence",
-        "hp": 140,
+        "hp": 143,
         "speed": "207",
         "conso": "7,6",
         "supp": 2800
     },
     "d140": {
-        "name": "BVM6 2.0 HDi 140",
+        "name": "BVM6 HDi 138 FAP",
         "fuel": "Turbo Diesel",
-        "hp": 140,
+        "hp": 138,
         "speed": "207",
-        "conso": "5,3",
+        "conso": "5,4",
         "supp": 4200
     },
     "d136": {
-        "name": "BVA6 2.0 HDi 136",
+        "name": "BVA6 HDi 138 FAP",
         "fuel": "Turbo Diesel",
-        "hp": 136,
+        "hp": 138,
         "speed": "206",
         "conso": "6,6",
         "supp": 5400
     },
     "e20a": {
-        "name": "BVA4 2.0i 16V 140",
+        "name": "BVA4 143 2.0i 16V",
         "fuel": "Essence",
-        "hp": 140,
+        "hp": 143,
         "speed": "206",
         "conso": "8,1",
         "supp": 4100
     },
     "e20s": {
-        "name": "BVM5 2.0i 16V 180",
+        "name": "BVM5 180 2.0i 16V",
         "fuel": "Essence",
         "hp": 180,
         "speed": "227",
@@ -104,7 +104,7 @@ window.C4_OPTIONS = [
         "cat": "Confort",
         "name": "Accoudoir Avant",
         "img": "accoudoir-avant.jpg",
-        "desc": "L’accoudoir avant est escamotable et coulissant. Il peut être équipé, avec le système NaviDrive d’un chargeur de 5 CD.",
+        "desc": "L’accoudoir avant est escamotable et coulissant. Il est équipé, avec le système NaviDrive d’un chargeur de 5 CD.",
         "price": 150
     },
     {
@@ -112,7 +112,7 @@ window.C4_OPTIONS = [
         "cat": "Confort",
         "name": "Banquette arrière rabattable",
         "img": "banquette-arriere-rabattable.jpg",
-        "desc": "La banquette arrière de Citroën C4 est fractionnable 2/3 - 1/3 dossier et assise. Chaque partie du dossier et de l’assise est rabattable pour libérer un espace supplémentaire. L’ensemble de la banquette est aisément démontable grâce à son système de fixation rapide, permettant le chargement du coffre jusqu’aux sièges avant.",
+        "desc": "La banquette arrière de Citroën C4 est fractionnable 2/3 – 1/3 dossier et assise. Chaque partie du dossier et de l’assise est rabattable pour libérer un espace supplémentaire. L’ensemble de la banquette est aisément démontable grâce à son système de fixation rapide, permettant le chargement du coffre jusqu’aux sièges avant.",
         "base": true
     },
     {
@@ -188,7 +188,7 @@ window.C4_OPTIONS = [
         "cat": "Confort",
         "name": "Musique",
         "img": "musique.jpg",
-        "desc": "Système Hi-fi JBL Gage de plus haut niveau de qualité, la configuration innovante spécialement développée pour Citroën C4 est le résultat d’une collaboration entre Citroën et JBL. Le système Hi-fi JBL de C4 (associé aux vitres latérales feuilletées dans le « Pack Acoustique ») offre à ses auditeurs une prestation acoustique sur mesure spécifiquement définie et optimisée pour l’habitacle de C4.",
+        "desc": "Système Hi-fi JBL Gage de plus haut niveau de qualité, la configuration innovante spécialement développée pour Citroën C4 est le résultat d’une collaboration entre Citroën et JBL. Le système Hi-fi JBL de C4 (associé aux vitres latérales feuilletées dans le « Pack Acoustique ») offre à ses auditeurs une prestation acoustique sur mesure spécifiquement définie et optimisée pour l’habitacle de C4. Caisson de basse Le caisson de basse installé dans le coffre permet d’offrir un relief sonore et une qualité acoustique remarquables. En route, le volume du combiné Radio CD varie automatiquement en fonction de la vitesse de manière à maintenir de bonnes conditions d’écoute.",
         "price": 700
     },
     {
@@ -201,7 +201,7 @@ window.C4_OPTIONS = [
         "price": 600,
         "includes": [
             "vitres-laterales",
-            "radio-cd"
+            "musique"
         ]
     },
     {
@@ -298,7 +298,7 @@ window.C4_OPTIONS = [
         "cat": "Sécurité",
         "name": "Alerte état pneus",
         "img": "alerte-etat-pneus.jpg",
-        "desc": "Progrès essentiel pour la sécurité, le système d’alerte de sous -gonflage de C4 contrôle régulièrement la pression de chaque pneumatique et avertit de manière visuelle et sonore le conducteur en cas de problème.",
+        "desc": "Progrès essentiel pour la sécurité, le système d’alerte de sous –gonflage de C4 contrôle régulièrement la pression de chaque pneumatique et avertit de manière visuelle et sonore le conducteur en cas de problème.",
         "price": 300
     },
     {
@@ -306,7 +306,7 @@ window.C4_OPTIONS = [
         "cat": "Sécurité",
         "name": "Ceintures de sécurité",
         "img": "ceintures-de-securite.jpg",
-        "desc": "Technologie Les cinq places de C4 sont équipées de ceintures de sécurité à 3 points d’ancrage. Un témoin de non-bouclage pour chacune s’inscrit sur le côté droit du combiné translucide. 3 ceintures de sécurité arrière 3 points à enrouleur avec limiteur d’effort pour les ceintures latérales. Ceintures de sécurité avant à prétensionneurs pyrotechniques avec limiteur d’effort.",
+        "desc": "Technologie Les cinq places de C4 sont équipées de ceintures de sécurité à 3 points d’ancrage. Un témoin de non-bouclage pour chacune s’inscrit sur le côté droit du combiné translucide. 3 ceintures de sécurité arrière 3 points à enrouleur avec limiteur d’effort pour les ceintures latérales. Ceintures de sécurité avant à prétensionneurs pyrotechniques avec limiteur d’effort. Clip antiretour Intégré au dossier des sièges avant, un clip antiretour escamotable permet de retenir la ceinture de sécurité pour faciliter son utilisation et d’éviter les contorsions.",
         "base": true
     },
     {
@@ -314,7 +314,7 @@ window.C4_OPTIONS = [
         "cat": "Sécurité",
         "name": "ESP",
         "img": "esp.jpg",
-        "desc": "Fonction de l'ESP Le contrôle dynamique de stabilité ESP permet d’optimiser la tenue de route en virage en aidant à rétablir la trajectoire lorsque la voiture est en situation de sous-virage, de survirage ou en situation soudaine d’évitement.",
+        "desc": "Fonction de l'ESP Le contrôle dynamique de stabilité ESP permet d’optimiser la tenue de route en virage en aidant à rétablir la trajectoire lorsque la voiture est en situation de sous-virage, de survirage ou en situation soudaine d’évitement. Complément de sécurité Les systèmes dédiés à l’assistance et au contrôle du freinage ainsi qu’au maintien de trajectoire, ESP, associés à la tenue de route exemplaire propre à la technologie des suspensions Citroën, garantissent un contrôle optimal du véhicule dans les situations de conduite les plus délicates.",
         "price": 500
     },
     {
@@ -322,7 +322,7 @@ window.C4_OPTIONS = [
         "cat": "Sécurité",
         "name": "Equipements de sécurité",
         "img": "equipements-de-securite.jpg",
-        "desc": "Structure renforcée Parce que la route ne sera jamais sûre à 100%, Citroên C4 multiplie les équipements de série pour garantir une sécurité maximale à ses occupants. Conçu comme une véritable cellule de protection en cas de choc frontal ou latéral, avec structures renforcées et zones d’absorption d’énergie, l’habitacle dispose de très nombreux équipements spécifiques de retenue et de protection pour tous les passagers, adultes ou enfants, à l’avant comme à l’arrière.",
+        "desc": "Structure renforcée Parce que la route ne sera jamais sûre à 100%, Citroên C4 multiplie les équipements de série pour garantir une sécurité maximale à ses occupants. Conçu comme une véritable cellule de protection en cas de choc frontal ou latéral, avec structures renforcées et zones d’absorption d’énergie, l’habitacle dispose de très nombreux équipements spécifiques de retenue et de protection pour tous les passagers, adultes ou enfants, à l’avant comme à l’arrière. Airbags Les airbags rideaux intégrés au pavillon et les airbags thorax intégrés dans les sièges avant se déploient en cas de choc latéral de manière à protéger la tête des passagers avant et arrière, et à décaler l’occupant vers l’intérieur de l’habitacle, l’éloignant ainsi de la zone d’impact maximal, tout en diminuant l’effet de vitesse relative. Quant aux airbags avant, ils disposent d’un système de gonflage à double générateur de pression, qui module la puissance et la vitesse du gonflage de chaque airbag en fonction de l’intensité du choc. En outre, le Volant à Commandes Centrales Fixes a permis d’optimiser l’ergonomie de l’airbag conducteur.",
         "base": true
     },
     {
@@ -370,7 +370,7 @@ window.C4_OPTIONS = [
         "cat": "Sécurité",
         "name": "Projecteurs Xénon bi-fonction",
         "img": "projecteurs-xenon-bi-fonction.jpg",
-        "desc": "Champ de vision élargi Dès le premier regard, la volonté de sécurité maximale de Citroën C4 saute aux yeux. Ses projecteurs directionnels Xénon bi-fonction offrent un champ de vision élargi et suivent les mouvements de rotation du volant, permettant d’accroître la visibilité dans les zones sombres potentiellement dangereuses de l’intérieur des virages.",
+        "desc": "Champ de vision élargi Dès le premier regard, la volonté de sécurité maximale de Citroën C4 saute aux yeux. Ses projecteurs directionnels Xénon bi-fonction offrent un champ de vision élargi et suivent les mouvements de rotation du volant, permettant d’accroître la visibilité dans les zones sombres potentiellement dangereuses de l’intérieur des virages. Accompagnement du changement de direction Grâce à la technologie Xénon bi-fonction, référence de qualité en matière d’éclairage automobile, phares et feux de croisement génèrent un éclairage à la fois plus puissant et plus confortable. Les conditions de conduite nocturne s’avèrent d’autant plus sûres que le faisceau des projecteurs directionnels de Citroën C4 accompagne les changements de direction du véhicule en fonction de l’angle de rotation du volant.",
         "price": 1200
     },
     {
@@ -394,7 +394,7 @@ window.C4_OPTIONS = [
         "cat": "Sécurité",
         "name": "Vitres latérales",
         "img": "vitres-laterales.jpg",
-        "desc": "Isolation Associées au système Hi-fi, les vitres latérales de Citroën C4 sont en verre feuilleté pour une meilleure sécurité anti-intrusion et une excellente isolation phonique.",
+        "desc": "Isolation Associées au système Hi-fi, les vitres latérales de Citroën C4 sont en verre feuilleté pour une meilleure sécurité anti-intrusion et une excellente isolation phonique. Sécurité Le système électrique de sécurité enfants intégrale permet d’activer ou de désactiver à volonté depuis la place conducteur les commandes d’ouverture des portes et vitres arrière. Chacune des vitres électriques avant et arrière est à commande séquentielle et dotée d’un dispositif de sécurité antipincement.",
         "price": 250
     },
     {
@@ -457,20 +457,8 @@ window.C4_OPTIONS = [
         "cat": "Technologie",
         "name": "VCCF",
         "img": "vccf.jpg",
-        "desc": "Généralités et push Ancrages Isofix pour installer les sièges enfants en quelques secondes aux places latérales arrière. Les push situés sur le Volant à Commandes Centrales Fixes permettent de piloter tous les menus de l’écran multifonction (navigation, ordinateur de bord, télématique…).",
+        "desc": "Généralités et push Ancrages Isofix pour installer les sièges enfants en quelques secondes aux places latérales arrière. Les push situés sur le Volant à Commandes Centrales Fixes permettent de piloter tous les menus de l’écran multifonction (navigation, ordinateur de bord, télématique…). La touche personnalisable Parmi les commandes de fonctions optionnelles situées sur la partie gauche du Volant à Commandes Centrales Fixes, la touche personnalisable peut être programmée à volonté pour commander l’allumage ou l’extinction du plafonnier, le journal des alarmes, l’état des fonctions, ou, par défaut, la fonction « Black Panel » d’éclairage nocturne du tableau de bord.",
         "base": true
-    },
-    {
-        "id": "bluetooth",
-        "cat": "Technologie",
-        "name": "Kit mains-libres Bluetooth",
-        "img": "",
-        "extra": true,
-        "price": 450,
-        "incompatible": [
-            "navidrive"
-        ],
-        "desc": "Kit mains-libres Bluetooth pour les C4 sans NaviDrive. Option ajoutée par le projet, absente des archives Citroën : d’après un retour de forum de 2006, elle ne peut pas être combinée avec NaviDrive, qui intègre déjà son propre téléphone mains-libres."
     }
 ];
 window.C4_DATA = {
@@ -527,7 +515,7 @@ window.C4_DATA = {
                                 "facts": [
                                     "6 motorisations"
                                 ],
-                                "inherit": "Contient les options de C4.",
+                                "inherit": "Contient les équipements C4.",
                                 "note": "Équipements supplémentaires :",
                                 "lines": [
                                     "ESP sur HDi 110 et HDi FAP",
@@ -577,7 +565,7 @@ window.C4_DATA = {
                                     "13 équipements",
                                     "9 motorisations"
                                 ],
-                                "inherit": "Contient les options de C4 Pack.",
+                                "inherit": "Contient les équipements C4 Pack avec en plus les équipements suivants :",
                                 "note": "Équipements supplémentaires :",
                                 "lines": [
                                     "Climatisation automatique avec réglage séparé gauche / droite",
@@ -591,7 +579,7 @@ window.C4_DATA = {
                                     "Tiroir sous siège passager avant",
                                     "Accoudoir central avant et arrière",
                                     "Projecteurs antibrouillard",
-                                    "Jantes alliage 16 pouces (sur HDi 140)",
+                                    "Jantes alliage 16 pouces (sur HDi 138 FAP)",
                                     "Sièges velours"
                                 ],
                                 "engines": [
@@ -654,7 +642,7 @@ window.C4_DATA = {
                                     "7 équipements",
                                     "8 motorisations"
                                 ],
-                                "inherit": "Contient les options de C4 Pack Ambiance.",
+                                "inherit": "Contient les équipements C4 Pack Ambiance avec en plus les équipements suivants :",
                                 "note": "Équipements supplémentaires :",
                                 "lines": [
                                     "Projecteurs Xénon bi-fonction directionnels avec lave-projecteurs",
@@ -743,7 +731,8 @@ window.C4_DATA = {
                                 "note": "Équipements de série :",
                                 "lines": [
                                     "ABS avec REF et AFU",
-                                    "Airbags frontaux, latéraux et rideaux",
+                                    "Airbags conducteur et passager",
+                                    "Airbags latéraux \"thorax\" à l'avant et \"rideau tête\" à l'avant et à l'arrière",
                                     "Régulateur / limiteur de vitesse",
                                     "Compte-tours électronique",
                                     "Essuie-vitres avant intermittent avec réduction de cadence à l'arrêt",
@@ -786,8 +775,8 @@ window.C4_DATA = {
                                 "inherit": "Finition spécifique de la série : elle ne contient pas les options de C4 Pulp.",
                                 "note": "Équipements de série :",
                                 "lines": [
-                                    "ABS avec REF et AFU",
-                                    "Airbags frontaux, latéraux et rideaux",
+                                    "ABS, REF, AFU",
+                                    "Airbags frontaux et latéraux",
                                     "Climatisation manuelle",
                                     "Condamnation centralisée avec Plip Haute Fréquence",
                                     "Lève-vitres avant électriques séquentiel et antipincement",
@@ -950,7 +939,7 @@ window.C4_DATA = {
                                     "18 équipements",
                                     "1 motorisation"
                                 ],
-                                "inherit": "Contient les options de C4 Leader.",
+                                "inherit": "Contient les équipements C4 Leader avec en plus les équipements suivants :",
                                 "note": "Équipements supplémentaires :",
                                 "lines": [
                                     "Système NaviDrive monochrome avec chargeur 5 CD"
@@ -968,15 +957,12 @@ window.C4_DATA = {
                                     },
                                     "navidrive": {
                                         "n": "Système NaviDrive monochrome avec chargeur 5 CD"
-                                    },
-                                    "leader-pack": {
-                                        "n": "Leader Pack"
                                     }
                                 }
                             },
                             {
                                 "id": "auto-ecole-pack",
-                                "name": "C4 Auto-École Pack",
+                                "name": "C4 Auto-Ecole Pack",
                                 "level": 3,
                                 "levels": 3,
                                 "sub": "Niveau 3 sur 3",
@@ -1086,7 +1072,7 @@ window.C4_DATA = {
                                 "facts": [
                                     "9 motorisations"
                                 ],
-                                "inherit": "Contient les options de C4.",
+                                "inherit": "Contient les équipements C4 avec en plus les équipements suivants :",
                                 "note": "Équipements supplémentaires :",
                                 "lines": [
                                     "ESP hors HDi 92 et 1.6 i 16 V",
@@ -1211,7 +1197,7 @@ window.C4_DATA = {
                                 "facts": [
                                     "9 motorisations"
                                 ],
-                                "inherit": "Contient les options de C4 VTR.",
+                                "inherit": "Contient les équipements C4 VTR avec en plus les équipements suivants :",
                                 "note": "Équipements supplémentaires :",
                                 "lines": [
                                     "ESP",
@@ -1320,7 +1306,7 @@ window.C4_DATA = {
                                 "note": "Équipements de série :",
                                 "lines": [
                                     "ABS, REF, AFU",
-                                    "Airbags frontaux, latéraux et rideaux",
+                                    "Airbags frontaux et latéraux",
                                     "Climatisation manuelle",
                                     "Condamnation centralisée avec Plip Haute Fréquence",
                                     "Lève-vitres avant électriques",
