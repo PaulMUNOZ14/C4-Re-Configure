@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Configurateur | C4 Re:Configure</title>
+    <meta name="description"
+        content="Composez votre Citroën C4 première génération : phase, carrosserie, finition et motorisation d'époque.">
+    <meta name="referrer" content="no-referrer">
+    <meta name="theme-color" content="#010205">
+    <link rel="icon" href="../assets/logo/logo-mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/options.css">
+    <link rel="stylesheet" href="../css/configurateur.css">
+    <script src="../js/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+    <script src="../js/facture.js" defer></script>
+    <script src="../js/donnees.js" defer></script>
+    <script src="../js/configurateur.js" defer></script>
+</head>
+
+<body id="haut">
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header is-top">
+        <div class="header-inner">
+            <a class="brand" href="../index.html" aria-label="C4 Re:Configure, accueil">
+                <img class="brand-logo brand-logo-light" src="../assets/logo/logo-white.svg" alt="" width="323"
+                    height="46">
+                <img class="brand-logo brand-logo-dark" src="../assets/logo/logo.svg" alt="" width="323" height="46">
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+                <span class="menu-toggle-label">Menu</span>
+                <span class="menu-toggle-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+            </button>
+
+            <nav class="main-nav" id="menu-principal" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="../index.html#modeles">Modèles</a></li>
+                    <li><a href="configurateur.html" aria-current="page">Configurateur</a></li>
+                    <li><a href="options.html">Options et packs</a></li>
+                    <li><a href="guides.html">Guides</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenu" data-configurator>
+
+        <!-- ENTÊTE DE PAGE -->
+        <section class="page-hero page-hero--short" aria-labelledby="titre-page">
+            <div class="page-hero-content">
+                <p class="eyebrow">Citroën C4 · 2004 à 2010</p>
+                <h1 id="titre-page">Configurateur</h1>
+                <p class="page-hero-lead">Composez votre C4, comme à l’époque.</p>
+                <p class="hero-links"><a class="link-arrow link-light" href="#configuration">Commencer</a></p>
+            </div>
+        </section>
+
+        <!-- CONFIGURATEUR -->
+        <section class="opt-section cfg-section" id="configuration" aria-labelledby="t-config">
+            <div class="container">
+                <h2 class="sr-only" id="t-config">Votre configuration</h2>
+
+                <div class="cfg-layout">
+
+                    <!-- ÉTAPES -->
+                    <div class="cfg-steps">
+
+                        <section class="cfg-step" aria-labelledby="s1">
+                            <h3 class="cfg-step-title" id="s1"><span>1</span>Phase</h3>
+                            <div class="cfg-choices cfg-choices--2" data-choices="phase">
+                                <button type="button" class="cfg-choice" data-value="1" aria-pressed="false">
+                                    <strong>Phase I</strong><span>Dès 2004</span>
+                                </button>
+                                <button type="button" class="cfg-choice" data-value="2" aria-pressed="false">
+                                    <strong>Phase II</strong><span>Dès 2008</span>
+                                </button>
+                            </div>
+                        </section>
+
+                        <section class="cfg-step" aria-labelledby="s2">
+                            <h3 class="cfg-step-title" id="s2"><span>2</span>Carrosserie</h3>
+                            <div class="cfg-choices cfg-choices--2" data-choices="carrosserie">
+                                <button type="button" class="cfg-choice" data-value="berline" aria-pressed="false">
+                                    <strong>Berline</strong><span>5 portes</span>
+                                </button>
+                                <button type="button" class="cfg-choice" data-value="coupe" aria-pressed="false">
+                                    <strong>Coupé</strong><span>3 portes</span>
+                                </button>
+                            </div>
+                        </section>
+
+                        <section class="cfg-step" aria-labelledby="s3" aria-live="polite">
+                            <h3 class="cfg-step-title" id="s3"><span>3</span>Finition</h3>
+                            <p class="cfg-hint" data-hint="finition">Choisissez d’abord une phase et une carrosserie.
+                            </p>
+                            <div data-list="finition"></div>
+                        </section>
+
+                        <section class="cfg-step" aria-labelledby="s4" aria-live="polite">
+                            <h3 class="cfg-step-title" id="s4"><span>4</span>Motorisation</h3>
+                            <p class="cfg-hint" data-hint="motorisation">Choisissez d’abord une finition.</p>
+                            <div data-list="motorisation"></div>
+                        </section>
+
+                        <section class="cfg-step" aria-labelledby="s5" aria-live="polite">
+                            <h3 class="cfg-step-title" id="s5"><span>5</span>Options</h3>
+                            <p class="cfg-hint" data-hint="options">Choisissez d’abord une finition.</p>
+                            <p class="cfg-hint cfg-legend">Les équipements déjà inclus dans votre finition sont cochés
+                                et verrouillés. Les autres sont des options payantes.</p>
+                            <div data-list="options"></div>
+                        </section>
+
+                        <noscript>
+                            <p class="cfg-hint">Le configurateur nécessite JavaScript. Les finitions et motorisations
+                                sont consultables sur la page <a href="options.html">Options et packs</a>.</p>
+                        </noscript>
+                    </div>
+
+                    <!-- RÉCAPITULATIF -->
+                    <aside class="cfg-summary" aria-labelledby="t-recap">
+                        <div class="media cfg-visual" data-visual data-label="Image introuvable">
+                            <img alt="" width="1000" height="800" hidden>
+                        </div>
+
+                        <h3 id="t-recap">Votre C4</h3>
+                        <dl class="cfg-recap">
+                            <div>
+                                <dt>Phase</dt>
+                                <dd data-recap="phase">À choisir</dd>
+                            </div>
+                            <div>
+                                <dt>Carrosserie</dt>
+                                <dd data-recap="carrosserie">À choisir</dd>
+                            </div>
+                            <div>
+                                <dt>Finition</dt>
+                                <dd data-recap="finition">À choisir</dd>
+                            </div>
+                            <div>
+                                <dt>Motorisation</dt>
+                                <dd data-recap="motorisation">À choisir</dd>
+                            </div>
+                            <div>
+                                <dt>Options</dt>
+                                <dd data-recap="options">Aucune</dd>
+                            </div>
+                        </dl>
+
+                        <dl class="cfg-price" data-price hidden>
+                            <div>
+                                <dt>Véhicule</dt>
+                                <dd data-price-vehicle></dd>
+                            </div>
+                            <div>
+                                <dt>Options</dt>
+                                <dd data-price-options></dd>
+                            </div>
+                            <div>
+                                <dt>Frais de mise à disposition</dt>
+                                <dd data-price-fees></dd>
+                            </div>
+                            <div class="cfg-price-total">
+                                <dt>Total TTC</dt>
+                                <dd data-price-total></dd>
+                            </div>
+                        </dl>
+
+                        <ul class="cfg-specs" data-specs hidden>
+                            <li><strong data-spec="puissance"></strong><span>puissance</span></li>
+                            <li><strong data-spec="vitesse"></strong><span>vitesse maxi</span></li>
+                            <li><strong data-spec="conso"></strong><span>l/100 km (mixte)</span></li>
+                        </ul>
+
+                        <p class="cfg-link" data-equip-link hidden><a class="link-arrow" href="options.html">Voir
+                                l’équipement de cette finition</a></p>
+
+                        <div class="cfg-invoice">
+                            <label for="client-name">Nom sur la facture <small>(facultatif)</small></label>
+                            <input type="text" id="client-name" data-client maxlength="40" autocomplete="off"
+                                placeholder="Client exemple">
+                            <button type="button" class="cfg-invoice-btn" data-invoice disabled>Générer ma facture
+                                simulée (PDF)</button>
+                            <p class="cfg-invoice-msg" data-invoice-msg role="status"></p>
+                        </div>
+
+                        <button type="button" class="cfg-reset" data-reset>Tout réinitialiser</button>
+                        <p class="cfg-note">Vitesses et consommations d’après Wikipédia. Prix estimés et indicatifs, non
+                            officiels. La facture est un document fictif, sans valeur contractuelle.</p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONFIRMATION (pack ou option incompatible) -->
+        <dialog class="cfg-dialog" data-dialog aria-labelledby="dlg-title">
+            <form method="dialog">
+                <h3 id="dlg-title" data-dialog-title></h3>
+                <div class="cfg-dialog-body" data-dialog-body></div>
+                <div class="cfg-dialog-actions">
+                    <button type="submit" value="cancel" class="cfg-dialog-cancel" autofocus>Annuler</button>
+                    <button type="submit" value="ok" class="cfg-dialog-ok">Retirer et continuer</button>
+                </div>
+            </form>
+        </dialog>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <section class="footer-col">
+                    <h2 class="footer-title"><button class="footer-toggle" type="button"
+                            aria-controls="f-modeles"><span>Modèles</span><i aria-hidden="true"></i></button></h2>
+                    <ul class="footer-list" id="f-modeles">
+                        <li><a href="configurateur.html?phase=1&amp;carrosserie=coupe">C4 Coupé, Phase I</a></li>
+                        <li><a href="configurateur.html?phase=1&amp;carrosserie=berline">C4 Berline, Phase I</a></li>
+                        <li><a href="configurateur.html?phase=2&amp;carrosserie=coupe">C4 Coupé, Phase II</a></li>
+                        <li><a href="configurateur.html?phase=2&amp;carrosserie=berline">C4 Berline, Phase II</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-col">
+                    <h2 class="footer-title"><button class="footer-toggle" type="button"
+                            aria-controls="f-explorer"><span>Explorer</span><i aria-hidden="true"></i></button></h2>
+                    <ul class="footer-list" id="f-explorer">
+                        <li><a href="configurateur.html">Configurateur</a></li>
+                        <li><a href="options.html">Options et packs</a></li>
+                        <li><a href="guides.html">Guides d'installation</a></li>
+                        <li><a href="catalogue.html">Catalogue</a></li>
+                    </ul>
+                </section>
+
+                <section class="footer-col">
+                    <h2 class="footer-title"><button class="footer-toggle" type="button"
+                            aria-controls="f-projet"><span>Le projet</span><i aria-hidden="true"></i></button></h2>
+                    <ul class="footer-list" id="f-projet">
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="a-propos.html#non-affiliation">Projet indépendant et non officiel</a></li>
+                        <li><a href="a-propos.html#credits-photos">Crédits photographiques</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="footer-bottom">
+                <a class="footer-logo" href="../index.html" aria-label="C4 Re:Configure, accueil">
+                    <img src="../assets/logo/logo-white.svg" alt="" width="323" height="46">
+                </a>
+                <ul class="footer-legal">
+                    <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    <li><a href="confidentialite.html">Confidentialité</a></li>
+                    <li><a href="#haut">Haut de page</a></li>
+                </ul>
+                <p class="footer-copy">© 2026 C4 Re:Configure</p>
+            </div>
+
+            <p class="footer-small">C4 Re:Configure est un projet indépendant, développé à titre personnel à des fins
+                informatives et éducatives. Il n'est ni édité, ni approuvé, ni sponsorisé par Citroën ou Stellantis.
+                Citroën et C4 sont des marques de leurs propriétaires respectifs, citées uniquement pour identifier le
+                véhicule étudié.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

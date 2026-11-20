@@ -55,12 +55,12 @@ Le configurateur accepte la phase et la carrosserie dans l'adresse, par exemple 
 
 Tant qu'un fichier est absent, la page affiche un cadre avec le nom attendu.
 
-| Fichier | Format |
-|---|---|
-| `videos/hero.mp4` (et `hero.webm`, optionnel) | 16:9, 1920 x 1080 |
-| `images/hero.jpg` | 16:9, 1920 x 1080 |
-| `images/c4-coupe-phase1.jpg`, `c4-berline-phase1.jpg`, `c4-coupe-phase2.jpg`, `c4-berline-phase2.jpg` | 5:4, 1000 x 800 minimum |
-| `images/configurateur.jpg`, `guides.jpg`, `catalogue.jpg` | 16:9, 1280 x 720 minimum |
+| Fichier |
+|---|
+| `videos/hero.mp4` (et `hero.webm`, optionnel) |
+| `images/hero.jpg` |
+| `images/c4-coupe-phase1.jpg`, `c4-berline-phase1.jpg`, `c4-coupe-phase2.jpg`, `c4-berline-phase2.jpg` |
+| `images/configurateur.jpg`, `guides.jpg`, `catalogue.jpg` |
 
 ## Lancer le site en local
 
