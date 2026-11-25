@@ -11,7 +11,7 @@
 
 Site web indépendant consacré à la Citroën C4 première génération (2004 à 2010) : configurateur Phase I et Phase II, coupé et berline, options et packs d'époque, guides d'installation.
 
-### Site web : https://paulmunoz14.github.io/C4-Re-Configure/
+### Site web : https://c4-re-configure.paulmunoz.fr
 
 > Projet personnel, informatif et non officiel. Il n'est ni édité, ni approuvé, ni sponsorisé par Citroën ou Stellantis. Citroën et C4 sont des marques de leurs propriétaires respectifs, citées uniquement pour identifier le véhicule étudié.
 
